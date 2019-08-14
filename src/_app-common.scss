@@ -1,0 +1,55 @@
+@import "styles/login";
+@import "app-variables";
+@import "styles/fa";
+
+.title{
+    font-size: 42;
+    color: #fff;
+    font-weight: bold;
+}
+
+.white-box{
+    border-radius: 10;
+    background-color: #fff;
+}
+.tf-gray{
+    font-size: 16;
+    border-radius: 5;
+    placeholder-color: $color_violet;
+    background-color: $color_gray_light;
+    padding: 10 0 10 25;
+    opacity: 0.5;    
+    &.user{
+        background-image: url("res://ic_user");
+        background-repeat: no-repeat;
+        background-position: 1% 50%;
+    }
+    &.password{
+        background-image: url("res://ic_password");
+        background-repeat: no-repeat;
+        background-position: 1% 50%;
+    }
+
+}
+
+.button{
+    width: 150;
+    height: 45;
+    border-radius: 12;
+    &.button-one{
+        background-color: $color_violet;
+        color: white;
+    }
+    &.button-second{
+        background-color:$color_green;        
+    }
+    &.button-third{
+        background-color: $color_green;        
+        color: #fff;
+    }
+    &.arrow{
+        background-image: url("res://arrow");
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
+}

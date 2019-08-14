@@ -1,0 +1,20 @@
+
+.background{
+    background-image: url("res://background_login");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+.title-login{
+    color:#6644CC;
+    text-align: center;
+    &.small{
+        font-size:12;
+        font-weight: 300;
+    }
+    &.big{
+        font-size:40;
+        font-weight: bold;
+    }
+}

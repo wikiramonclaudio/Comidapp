@@ -1,0 +1,31 @@
+<!-- <Button text="login works!" class="btn btn-primary"></Button>
+
+<StackLayout class="background">
+    <Label text="Login Component" textWrap="true"></Label>
+    
+</StackLayout> -->
+
+<GridLayout>
+    <GridLayout class="background"></GridLayout>
+    <DockLayout>
+        <StackLayout dock="top" style="padding:25;">
+            <Label class="title" text="Sign in" textWrap="true"> </Label>
+            <StackLayout marginTop="1%" class="white-box">
+                <Image style="margin-top:-180;" src="res://salad"></Image>
+                <Label text="Welcome back" style="margin-top: -30" class="title-login big"></Label>
+                <Label text="We Love to see you agian" class="title-login small"></Label>
+                <TextField class="tf-gray user" hint="Username Or Email Address" keyboardType="email"
+                    autocapitalizationType="none" style="margin:10">
+                </TextField>
+                <TextField class="tf-gray password" hint="Password" secure="true" style="margin:0 10">
+                </TextField>
+                <Button style="margin-bottom: 15; margin-top: 12;" class="button button button-one fas fa-car" text="&#xf019;" >                    
+                </Button>
+            </StackLayout>
+        </StackLayout>
+        <GridLayout dock="bottom" columns="*, *">
+            <Button class="button button-one" text="Sign in" col="0"></Button>
+            <Button class="button button-third" text="Sign Up" col="1"></Button>
+        </GridLayout>
+    </DockLayout>
+</GridLayout>
