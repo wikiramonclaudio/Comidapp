@@ -1,0 +1,22 @@
+@import "../app-variables";
+
+.bottom-bar-line{    
+    border-color-top: #f1f1f1;
+    border-top-width: 1;
+    box-shadow: inset 0px 14px 20px 0px rgba(171,158,171,1);
+    // padding-top: 9;
+    vertical-align: middle;
+    line-height: 50;
+
+    .bottom-bar-stack{
+        vertical-align: center;
+    }
+}
+
+.selected-item{
+    background-color: $color_violet;
+    border-radius: 25;
+    margin-top: 3;
+    padding:5;
+    width: 100%;
+}

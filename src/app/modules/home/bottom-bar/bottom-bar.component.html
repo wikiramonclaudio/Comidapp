@@ -1,0 +1,29 @@
+<GridLayout rows="*, 55" columns="">
+    <ng-content row="0"></ng-content>
+    <FlexboxLayout row="1" class="bottom-bar-line" style="border-color: #cec6c6">
+        <StackLayout width="25%" class="bottom-bar-stack" verticalAlignment="center">
+                <Label *ngIf="index!=0" stretch="none" verticalAlignment="center" class="button fas fa-lg" style="padding-top: 8;text-align: center;"
+                text="&#xf015;" [nsRouterLink]="['/']" pageTransition="slide"></Label>
+                <StackLayout class="selected-item" *ngIf="index==0" orientation="horizontal" horizontalAlignment="center">
+                    <Label text="Home" style="color: white" verticalAlignment="center"></Label>
+                    <Label stretch="none" class="fas" style="padding-top: 3;text-align: center; margin-left: 6; color:white;"
+                    text="&#xf015;" [nsRouterLink]="['/']" pageTransition="slide" verticalAlignment="center"></Label>
+                </StackLayout>
+        </StackLayout>
+        <StackLayout width="25%" class="bottom-bar-stack" verticalAlignment="center" >
+            <Label stretch="none" verticalAlignment="center" class="button fas fa-lg"
+                style="padding-top: 8;text-align: center;" text="&#xf2e7;"
+                [nsRouterLink]="['/']" pageTransition="slide"></Label>
+        </StackLayout>
+        <StackLayout width="25%" class="bottom-bar-stack" verticalAlignment="center">
+            <Label stretch="none" verticalAlignment="center" class="button fas fa-lg"
+                style="padding-top: 8;text-align: center;" text="&#xf0f3;"
+                [nsRouterLink]="['/']" pageTransition="slide"></Label>    
+        </StackLayout>
+        <StackLayout width="25%" class="bottom-bar-stack" verticalAlignment="center">
+            <Label stretch="none" verticalAlignment="center" class="button fas fa-lg"
+                style="padding-top: 8;text-align: center;" text="&#xf007;"
+                [nsRouterLink]="['/']" pageTransition="slide"></Label>
+        </StackLayout>
+    </FlexboxLayout>
+</GridLayout>

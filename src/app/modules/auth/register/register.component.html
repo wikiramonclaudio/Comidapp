@@ -1,0 +1,34 @@
+<GridLayout>
+    <GridLayout class="background"></GridLayout>
+    <DockLayout>
+        <StackLayout dock="top" style="padding:25;">
+            <Label class="title" text="Sign up" textWrap="true"> </Label>
+            <StackLayout marginTop="1%" class="white-box">                
+                <Label text="Lets Join Us" style="margin-top: 5" class="title-login big green"></Label>
+                <Label text="We would love you to join us" class="title-login green small"></Label>
+                                 
+                <FlexboxLayout justifyContent="center" width="100" height="50" marginTop="18" stretchLastChild="false">                   
+                    <Label text="&#xf39e;" dock="right" style="margin-right: 25" class="social-icon blue fab"></Label>      
+                    <Label text="&#xf1a0;" dock="left" class="social-icon red fab"></Label>
+                </FlexboxLayout>    
+                <Label text="We have multiple options for you to join us" style="opacity: 0.6;" class="title-long title-login small"></Label>     
+                
+                <TextField class="tf-gray user-green" hint="Username"
+                    style="margin:10">
+                </TextField>
+                <TextField class="tf-gray email-green" hint="Email Address" keyboardType="email"
+                    autocapitalizationType="none" style="margin:10">
+                </TextField>
+                <TextField class="tf-gray password-green" hint="Password" secure="true" style="margin:0 10">
+                </TextField>
+                <Button style="margin-bottom: 15; margin-top: 15;" class="button button-third has-icon fas" text="&#xf2f6;" >                    
+                </Button>
+            </StackLayout>
+        </StackLayout>
+        <GridLayout dock="bottom" columns="*, *">
+            <!-- fade -->
+            <Button class="button button-second" backgroundColor="white" text="Sign in" [nsRouterLink]="['/']" pageTransition="fade" col="0"></Button>
+            <Button class="button button-third" text="Sign Up" col="1"></Button>
+        </GridLayout>
+    </DockLayout>
+</GridLayout>

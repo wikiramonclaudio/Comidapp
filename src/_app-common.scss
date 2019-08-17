@@ -1,12 +1,13 @@
 @import "styles/login";
 @import "app-variables";
 @import "styles/fa";
+@import "styles/bottom-bar";
 
 .title{
     font-size: 42;
     color: #fff;
     font-weight: bold;
-}
+}  
 
 .white-box{
     border-radius: 10;
@@ -18,14 +19,29 @@
     placeholder-color: $color_violet;
     background-color: $color_gray_light;
     padding: 10 0 10 25;
-    opacity: 0.5;    
+    opacity: 0.6;         
     &.user{
         background-image: url("res://ic_user");
         background-repeat: no-repeat;
-        background-position: 1% 50%;
+        background-position: 1% 50%;        
     }
     &.password{
         background-image: url("res://ic_password");
+        background-repeat: no-repeat;
+        background-position: 1% 50%;
+    }
+    &.user-green{
+        background-image: url("res://ic_user_green");
+        background-repeat: no-repeat;
+        background-position: 1% 50%;        
+    }
+    &.password-green{
+        background-image: url("res://ic_password_green");
+        background-repeat: no-repeat;
+        background-position: 1% 50%;
+    }
+    &.email-green{
+        background-image: url("res://ic_email");
         background-repeat: no-repeat;
         background-position: 1% 50%;
     }
@@ -39,6 +55,7 @@
     &.button-one{
         background-color: $color_violet;
         color: white;
+        
     }
     &.button-second{
         background-color:$color_green;        
@@ -52,4 +69,11 @@
         background-repeat: no-repeat;
         background-size: cover;        
     }
+    &.has-icon{
+        font-size: 25;
+    }
+}
+
+.fa-lg{
+    font-size: 30;
 }

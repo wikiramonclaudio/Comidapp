@@ -10,6 +10,10 @@ const routes: Routes = [
     {
         path: "",
         loadChildren: "./modules/auth/auth.module#AuthModule"
+    },
+    {
+        path: "home",
+        loadChildren: "./modules/home/home.module#HomeModule"
     }
 ];
 

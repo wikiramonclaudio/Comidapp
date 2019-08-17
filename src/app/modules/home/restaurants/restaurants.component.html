@@ -1,0 +1,40 @@
+<bottom-bar index="0">
+    <GridLayout rows="250, *" style="padding:0;margin: 0;">
+        <StackLayout row="0" style="background-image: url('res://bg_restaurants'); 
+            background-position: top center;             
+            background-repeat: no-repeat;
+            border-radius: 0;
+            padding:0;
+            background-size:105% 200%;
+            background-attachment: fixed;
+            background-color: orange;">
+        </StackLayout>
+        <RadListView row="1" [items]="data" >
+            <ng-template let-item="item">
+                <CardView
+                 margin="10"
+                 backgroundColor="white" 
+                 elevation="20" 
+                 radius="5">
+                    <StackLayout>                     
+                        <Image [src]="item.restaurant.thumb" stretch="fill" height="100"></Image>
+                        <StackLayout padding="5">                            
+                            <Label [text]="item.restaurant.name" textWrap="true"></Label>
+                            <Label 
+                                [text]="item.restaurant.location.address" 
+                                textWrap="true"
+                                style="color:gray; font-size:10">                                
+                            </Label>
+                        </StackLayout>
+                    </StackLayout>
+                </CardView>
+            </ng-template>
+            <ListViewStaggeredLayout                     
+                    tkListViewLayout
+                    scrollDirection="Vertical" 
+                    spanCount="2">
+            </ListViewStaggeredLayout>
+        </RadListView>
+    </GridLayout>
+
+</bottom-bar>

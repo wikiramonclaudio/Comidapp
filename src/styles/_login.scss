@@ -1,3 +1,4 @@
+@import "../app-variables";
 
 .background{
     background-image: url("res://background_login");
@@ -9,6 +10,9 @@
 .title-login{
     color:#6644CC;
     text-align: center;
+    &.green{
+        color: $color_green;
+    }
     &.small{
         font-size:12;
         font-weight: 300;
@@ -17,4 +21,14 @@
         font-size:40;
         font-weight: bold;
     }
+}
+
+.social-icon{
+    font-size: 30;
+    &.red{
+        color: $color_red;
+    }
+    &.blue{
+        color: #3497FD;
+    }    
 }

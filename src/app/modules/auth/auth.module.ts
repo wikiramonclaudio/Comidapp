@@ -3,9 +3,11 @@ import { NativeScriptCommonModule } from 'nativescript-angular/common';
 import { LoginComponent } from './login/login.component';
 import { Routes } from '@angular/router';
 import { NativeScriptRouterModule } from 'nativescript-angular/router';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path: "", component: LoginComponent },
+  { path: "register", component: RegisterComponent },
   // { path: "items", component: ItemsComponent },
   // { path: "item/:id", component: ItemDetailComponent }
 ];
@@ -17,7 +19,8 @@ const routes: Routes = [
     NativeScriptRouterModule.forChild(routes)
   ],
   declarations: [
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   schemas: [NO_ERRORS_SCHEMA]
 })
